@@ -9,7 +9,7 @@ Players.PlayerAdded:Connect(function(plr)
 
     else
 
-        return
+        return 0
 
     end 
 

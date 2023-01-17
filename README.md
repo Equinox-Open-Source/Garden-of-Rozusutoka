@@ -17,3 +17,7 @@ Then wait for the build to finish
 ### Development Branch
 
 [Github Repo](https://github.com/InsulatorGMan/Garden-of-Rozusutoka-Development)
+
+### TODO
+
+- Add Weapon Throwing for Saibankan

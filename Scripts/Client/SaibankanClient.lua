@@ -36,7 +36,6 @@ end
 
 local function cycle(TimeBetweenActions)
     
-
     while true do
 
         local pos = ChooseRandomWaypoint()
@@ -48,7 +47,8 @@ local function cycle(TimeBetweenActions)
 
         UserInputService.InputBegan:Connect(function(key)
     
-            print('Player inputed, killing..')
+            --print('Player inputed, killing..')
+
             Player.Character.Health = 0
     
         end)

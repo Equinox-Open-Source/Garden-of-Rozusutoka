@@ -2,4 +2,4 @@ game.ReplicatedStorage.Events.SyncPlayerValues.OnServerEvent:Connect(function(pl
 	
 	plr["Safe"].Value = safe
 	
-end)
+end) 

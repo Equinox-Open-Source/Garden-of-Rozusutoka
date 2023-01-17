@@ -68,4 +68,4 @@ Events.SaibankanTarget.OnClientEvent:Connect(function(Position)
     Saibankan.Model = Model
     cycle()
 
-end)
+end) 

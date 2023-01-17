@@ -21,4 +21,10 @@ function Utils.FindDistance(Part1, Part2)
 
 end
 
+function Utils.RandomItemFromArray(Array)
+
+    return return Array[math.random(1, #Array)]
+
+end    
+
 return Utils

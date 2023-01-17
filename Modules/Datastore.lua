@@ -22,7 +22,7 @@ function DatastoreModule:SaveData(Player, Data --[[table]])
 
     if not Success then
         
-        warn('DatastoreModule Exception: '..Fail)
+        warn('DatastoreModule Exception: '..Fail) --
 
     end
 

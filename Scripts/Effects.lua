@@ -22,5 +22,5 @@ EffectPlayerEvent.OnServerEvent:Connect(function(plr, duration, effect, dmg)
 		end
 		
 	end
-	
+	 
 end)

@@ -36,3 +36,4 @@ module.IsLookingAtAI = function(AI)
 end
 
 return module
+ 

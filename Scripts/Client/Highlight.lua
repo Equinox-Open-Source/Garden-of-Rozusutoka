@@ -8,4 +8,4 @@ game.ReplicatedStorage.Events.HighlightClient.OnClientEvent:Connect(function(obj
 	
 	obj:WaitForChild('Highlight').Enabled = bool
 	
-end)
+end) 

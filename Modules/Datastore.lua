@@ -22,7 +22,7 @@ function DatastoreModule:SaveData(Player, Data --[[table]])
 
     if not Success then
         
-        warn('DatastoreModule Exception: '..Fail)
+        warn('DatastoreModule Exception: '..Fail) --
 
     end
 
@@ -36,7 +36,7 @@ function DatastoreModule:LoadData(Player, Data --[[table]])
 
         if Data.Key then
             
-            PlayerDatastore:GetAsync(Data.Key)
+            return PlayerDatastore:GetAsync(Data.Key)
 
         else
 
@@ -55,4 +55,4 @@ function DatastoreModule:LoadData(Player, Data --[[table]])
 end
 
 
-return DatastoreModule
+return DatastoreModule 

@@ -36,7 +36,7 @@ function DatastoreModule:LoadData(Player, Data --[[table]])
 
         if Data.Key then
             
-            PlayerDatastore:GetAsync(Data.Key)
+            return PlayerDatastore:GetAsync(Data.Key)
 
         else
 

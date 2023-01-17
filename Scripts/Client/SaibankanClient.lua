@@ -37,21 +37,25 @@ end
 local function cycle(TimeBetweenActions)
     
 
-    local pos = ChooseRandomWaypoint()
-    Saibankan.Model:PivotTo(pos.CFrame)
+    while true do
+
+        local pos = ChooseRandomWaypoint()
+        Saibankan.Model:PivotTo(pos.CFrame)
 
 
-    Saibankan.Model.Head.CFrame = CFrame.lookAt(Saibankan.Model.Head.Position,Character.Head.Position)
-    Character.Head.CFrame = CFrame.lookAt(Character.Head.Position,Saibankan.Model.Head.Position)
+        Saibankan.Model.Head.CFrame = CFrame.lookAt(Saibankan.Model.Head.Position,Character.Head.Position)
+        Character.Head.CFrame = CFrame.lookAt(Character.Head.Position,Saibankan.Model.Head.Position)
 
-    UserInputService.InputBegan:Connect(function(key)
+        UserInputService.InputBegan:Connect(function(key)
     
-        print('Player inputed, killing..')
-        Player.Character.Health = 0
+            print('Player inputed, killing..')
+            Player.Character.Health = 0
     
-    end)
+        end)
 
-    task.wait(TimeBetweenActions)
+        task.wait(TimeBetweenActions)
+
+    end    
 
 end
 

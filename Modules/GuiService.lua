@@ -1,5 +1,3 @@
-local UIS = game:GetService('UserInputService')
-
 local GuiService = {}
 
 function GuiService:RGB(Item, Speed)

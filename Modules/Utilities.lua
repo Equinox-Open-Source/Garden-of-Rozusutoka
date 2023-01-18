@@ -23,7 +23,7 @@ end
 
 function Utils.RandomItemFromArray(Array)
 
-    return return Array[math.random(1, #Array)]
+    return Array[math.random(1, #Array)]
 
 end    
 

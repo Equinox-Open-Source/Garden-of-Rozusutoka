@@ -41,19 +41,26 @@ local function cycle(TimeBetweenActions)
         local pos = ChooseRandomWaypoint()
         Saibankan.Model:PivotTo(pos.CFrame)
 
-
-        Saibankan.Model.Head.CFrame = CFrame.lookAt(Saibankan.Model.Head.Position,Character.Head.Position)
-        Character.Head.CFrame = CFrame.lookAt(Character.Head.Position,Saibankan.Model.Head.Position)
-
-        UserInputService.InputBegan:Connect(function(key)
+        if Utils.FindDistance(Saibankan.PrimaryPart - Character.PrimaryPart) <= Saibankan.Distace then
+            
+            Saibankan.Model.Head.CFrame = CFrame.lookAt(Saibankan.Model.Head.Position,Character.Head.Position)
+            Character.Head.CFrame = CFrame.lookAt(Character.Head.Position,Saibankan.Model.Head.Position)
+            task.wait(1)
+            UserInputService.InputBegan:Connect(function(key)
     
-            --print('Player inputed, killing..')
+                --print('Player inputed, killing..')
 
-            Player.Character.Health = 0
+                Player.Character.Health = 0
     
-        end)
+            end)
 
-        task.wait(TimeBetweenActions)
+            task.wait(TimeBetweenActions)
+
+        else
+
+            continue
+
+        end
 
     end    
 

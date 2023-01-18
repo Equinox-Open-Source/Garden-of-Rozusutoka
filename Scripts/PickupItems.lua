@@ -50,6 +50,12 @@ PickupObjects.ChildAdded:Connect(function()
 
 			end)
 
+			ClickDetector.Mouse1ButtonClick:Connect(function(plr)
+			
+				-- Pickup item and stor in user invetory
+			
+			end)
+
 		end
 
 	end

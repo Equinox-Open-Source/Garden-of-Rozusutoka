@@ -22,7 +22,7 @@ local function ChooseRandomWaypoint(LastWaypoint)
 
     local w = Utils.RandomItemFromArray(Saibankan.Waypoints)
 
-    if w not LastWaypoint then
+    if w ~= LastWaypoint then
 
         return w
 
